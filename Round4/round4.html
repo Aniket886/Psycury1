@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psy(c)ury</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Psy(c)ury</h1>
+        <button id="theme-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    </header>
+    <div class="mini-header">
+        <h2 id="round-name">Round 4: Code Crunch</h2>
+    </div>
+    <main>
+        <div class="toolbar">
+            <label for="language-selector">Language:</label>
+            <select id="language-selector">
+                <option value="c">C</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+            <button id="run-code"><i class="fas fa-play"></i> Run Code</button>
+            <button id="submit-code"><i class="fas fa-paper-plane"></i> Submit</button>
+            <button id="clear-code"><i class="fas fa-eraser"></i> Clear</button>
+            <button id="download-code"><i class="fas fa-download"></i> Download</button>
+        </div>
+        <div class="main-content">
+            <div class="editor-container">
+                <textarea id="editor" placeholder="Write your code here..."></textarea>
+            </div>
+            <div class="output-container">
+                <h3>Output</h3>
+                <div class="output-toolbar">
+                    <button id="clear-output"><i class="fas fa-trash"></i> Clear Output</button>
+                </div>
+                <textarea id="output" placeholder="Output will be displayed here..."></textarea>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Psy(c)ury | Built with ❤️ by FCIT</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

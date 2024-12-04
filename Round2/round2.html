@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psy(c)ury</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1><span>Welcome  to  Psy(c)ury</span></h1>
+    <button id="theme-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+  </header>
+
+  <!-- Toolbar Section -->
+  <div class="toolbar">
+    <span class="round-header">Round 2: Quantum Leap</span>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Question Display -->
+    <div class="editor-container">
+      <h2>Question</h2>
+      <p id="question">What is 2 + 3?</p>
+      <input id="answer-box" type="text" placeholder="Type your answer here..." autocomplete="off" />
+      <div class="buttons">
+        <button id="check-btn" onclick="checkAnswer()">Check</button>
+        <button id="submit-btn" onclick="submitAnswer()" disabled>Submit</button>
+      </div>
+      <p id="feedback"></p>
+    </div>
+  </div>
+
+  <footer>
+      &copy; 2024 Psy(c)ury | Built with ❤️ by FCIT
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

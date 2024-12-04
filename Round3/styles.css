@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1d23; /* Dark theme background */
+  color: #e0e0e0; /* Light text for contrast */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem; /* Slightly larger padding */
+  background-color: #2b3138; /* Darker header */
+  color: #90caf9; /* Brightened text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Enlarged font size */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px rgba(224, 209, 209, 0.123); /* Slight shadow for visibility */
+}
+
+header button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+  transform: scale(1.2);
+}
+
+/* Toolbar Styling */
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2b3138; /* Matches header for continuity */
+  border-bottom: 2px solid #546e7a;
+}
+
+.round-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e1f5fe;
+  text-align: center;
+  background: linear-gradient(135deg, #385765, #5c8db4);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+/* Editor Container */
+.editor-container {
+  background: #242a31;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(241, 241, 241);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.editor-container h2 {
+  color: #90caf9;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.editor-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.editor-container input {
+  width: 90%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #546e7a;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #100f0f;
+  margin-bottom: 1rem;
+}
+
+.editor-container .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.editor-container .buttons button {
+  flex: 1;
+  background-color: #90caf9;
+  border: none;
+  color: #242a31;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editor-container .buttons button:hover {
+  background-color: #1e88e5;
+}
+
+.editor-container #feedback {
+  font-size: 1.1rem;
+  color: #e1f5fe;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #242a31;
+  color: #90caf9;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}

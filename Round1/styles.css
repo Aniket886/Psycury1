@@ -1,0 +1,126 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1d23;
+    color: #e0e0e0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #242a31;
+    color: #90caf9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+/* Mini Header */
+.mini-header {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    height: 60px;
+}
+
+.mini-header .round-info {
+    background: #242a31;
+    color: #90caf9;
+    padding: 0.5rem;
+    gap: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mini-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: inherit;
+    padding: 0.5rem 1rem;
+}
+
+/* Quiz Container */
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #242a31;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quiz-container h1 {
+    text-align: center;
+    font-size: 2rem; 
+    color: #90caf9;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+#message-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#message-container.success {
+    color: #4caf50;
+}
+
+#message-container.error {
+    color: #f44336;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #242a31;
+    color: #90caf9;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
